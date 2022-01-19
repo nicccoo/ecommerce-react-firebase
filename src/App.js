@@ -1,11 +1,16 @@
 import React from "react";
-import Product from "./components/Products/Product";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import * as ROUTES from './routes/routes'
+import Home from './pages/home'
 
 function App() {
-
   return (
     <div>
-     <Product />
+      <Router>
+        <Routes>
+          <Route exact path={ROUTES.HOME} element={<Home />}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
