@@ -4,13 +4,13 @@
     align-items: center;
     height: 120px;
     width: 100%;
-    background: #FFF159;
+    background: #FFFFFF;
 }
 
 .navbar {
     display: flex;
-    width: 40%;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,3 +23,7 @@
     color: black;
 }
 
+.right{
+    display:flex;
+    align-items: center;
+}
