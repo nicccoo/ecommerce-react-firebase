@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid red;
+    padding: 32px;    
+    width: 100%;
+    height: 75vh;
+}
+
+.card {
+    display: flex;    
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 350px;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.card_header {
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content: center;    
+    width: 100%;
+    height: 70px;
+    background: cyan;
+}
+
+
+.card_footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    background: cyan;
+}
+
+
