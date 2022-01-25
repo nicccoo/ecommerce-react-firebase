@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.navbar}>
-      <h1>LOGO</h1>
+        <h1>LOGO</h1>
         <ul className={styles.center}>
           <NavLink className={styles.navlink} to="/">
             Home
@@ -19,8 +19,7 @@ const Header = () => {
           </NavLink>
         </ul>
         <div className={styles.right}>
-          <input type="text" />
-          <h3>cart</h3>
+          <input type="text" />          
         </div>
       </div>
     </div>

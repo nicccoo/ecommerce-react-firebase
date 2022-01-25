@@ -1,10 +1,11 @@
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 120px;
-    width: 100%;
+    width: 100%;    
     background: #FFFFFF;
+    
 }
 
 .navbar {
@@ -12,6 +13,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 24px;
 }
 
 .navlink {
@@ -24,6 +26,5 @@
 }
 
 .right{
-    display:flex;
-    align-items: center;
+    
 }
