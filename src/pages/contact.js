@@ -1,11 +1,13 @@
 import React from "react";
-import Contact from "../components/Contact/Contact";
+import Header from "../components/Header/Header";
 
-const Contact = () => {
-  return;
-  <>
-    <Contact />
-  </>;
+const ContactPage = () => {
+  return (
+    <>
+      <Header />
+      <h1>asdasd</h1>
+    </>
+  );
 };
 
-export default Contact;
+export default ContactPage;
