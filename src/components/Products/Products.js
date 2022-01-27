@@ -5,21 +5,18 @@ import Product from "./Product";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  
-  
-  const getData = async () => {
-    const newProducts = await getDocs(collection(db, "products"));
-    const prod = [];
-    newProducts.forEach((doc) => {
-      prod.push({ ...doc.data(), id: doc.id });      
-    });
-    setProducts(prod);
-  };
 
   useEffect(() => {
+    const getData = async () => {
+      const newProducts = await getDocs(collection(db, "products"));
+      const prod = [];
+      newProducts.forEach((doc) => {
+        prod.push({ ...doc.data(), id: doc.id });
+      });
+      setProducts(prod);
+    };
     getData();
   }, []);
-  
 
   return <Product products={products} />;
 };

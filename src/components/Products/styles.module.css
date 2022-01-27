@@ -1,40 +1,74 @@
 .container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    border: 1px solid red;
-    padding: 32px;    
-    width: 100%;
-    height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 32px;
+  width: 80%;
+  height: 80vh;
 }
 
 .card {
-    display: flex;    
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    width: 280px;
-    height: 350px;
-    flex-direction: column;
-    border: 1px solid red;
+  display: flex;
+  width: 280px;
+  height: 350px;
+  flex-direction: column;
 }
 
-.card_header {
-    display: flex;
-    align-items:center;
-    text-align: center;
-    justify-content: center;    
-    width: 100%;
-    height: 70px;
-    background: cyan;
+.card_image {
+  width: 100%;
+  height: 175px;
 }
 
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-.card_footer {
+.card_details {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_details {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  align-items: flex-start;
+  padding: 6px;
+  justify-content: space-around;
+}
+
+.product_details p {
+  margin: 0px;
+}
+
+.product_title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product_category {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.card_buttons {
     display: flex;
-    width: 100%;
-    height: 60px;
     justify-content: space-around;
-    background: cyan;
+    align-items: center;
+    padding: 12px;
 }
 
+.card_button {
+  width: 50%;
+  height: 70%;
+}
 
+.card:hover {
+    box-shadow: 0px 0px 41px -16px rgba(0,0,0,0.7);
+    transition: 0.145s;
+}
