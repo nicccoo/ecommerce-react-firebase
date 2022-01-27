@@ -15,7 +15,7 @@ const Header = () => {
             Products
           </NavLink>
           <NavLink className={styles.navlink} to="/contact">
-            Contacto
+            Contact
           </NavLink>
         </ul>
         <div className={styles.right}>

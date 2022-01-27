@@ -23,8 +23,11 @@
     margin: 0 12px;
     font-size: 16px;
     color: black;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-.right{
-    
+.navlink:hover {
+    border-bottom: 2px solid #000;
+    opacity: 0.6;    
 }
